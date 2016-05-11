@@ -104,7 +104,7 @@ aside {
 }
 
 main {
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
 	margin: 96px auto 30px auto;
   background-color: rgba(255, 255, 255, 0.5);
   width:769px;
@@ -141,27 +141,18 @@ body#kontakt main::before {
   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,0,0,1)), to(rgba(0,0,0,0)));
 }
 
-.main-col1 {float:left;width:709px; }
-.main-col2 {float:left; width:0px;height:100%;}
-
-.center {
-  position: absolute;
-  left: 50%;
-  top: 78%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 50%;
-  z-index: -1;
-}
-.vertical-text {
+.getMainHeight {
+  position:absolute;
+  left: calc(50% + 405px);
+  top: calc(0% + 400px);
+  width: 6px;
   font-weight: bold;
   color:#444;
-	margin-left: calc(50% + 398px);
   font-size: 0.875em;
-	display:block;
   transform: rotate(-90deg);
-  transform-origin: left top 0;
 }
+
+i {padding-right:5px; color: #444;font-size:6px;}
 
 .col {
 	float: left;
@@ -227,7 +218,6 @@ label {
 	border-radius: 0;
 	margin: 22px 20px 28px 0;
 	cursor:pointer;
-  transition: all .2s ease-in-out;
 }
 label:hover {
   border: 2px solid #a25b56;

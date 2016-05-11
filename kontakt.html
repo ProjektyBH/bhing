@@ -5,22 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kontakt | B.H. Engineering s.r.o.</title>
-  <script>
-      var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = '/css/main.min.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-</script>
   <link rel="stylesheet" href="/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link href='/fonts/akhand_semibold-webfont.woff' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="http://bhing.cz/kontakt">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://bhing.cz/feed.xml">
+  <script src="https://use.fontawesome.com/3dd73b1584.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -30,7 +19,7 @@
 
     <header>
   <div class="container">
-    <a href="index"><svg
+    <a href="/"><svg
 viewBox="-40 5 277.8594 28.48058"
 width="193.01462"
 height="60"
@@ -150,7 +139,7 @@ id="svg2"
 </svg>
 </a>
     <nav>
-      <a id="home-nav" href="index">o nás</a>
+      <a id="home-nav" href="/">o nás</a>
       <a id="projekce-nav" href="projekce">projekce</a>
       <a id="dozor-nav" href="dozor">stavební dozor</a>
       <a id="reference-nav" href="reference">reference</a>
@@ -180,8 +169,8 @@ id="svg2"
 					<span class="family-name">Svoboda</span>&nbsp;-&nbsp;
 					<span class="category">jednatel</span>
 				</h2>
-				<div>tel.:<span class="tel">+420 608 777 474</span></div>
-				<div>email: <a class="email" href="mailto:bh.svoboda@seznam.cz">bh.svoboda@seznam.cz</a></div>
+				<div><i class="fa fa-phone" aria-hidden="true"></i><span class="tel"> +420 608 777 474</span></div>
+				<div><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email" href="mailto:bh.svoboda@seznam.cz">bh.svoboda@seznam.cz</a></div>
 			</p> <!-- vcard Jiří Svoboda -->
 
 			<p id="hcard-Ing.-Přemysl-Tomáš" class="vcard">
@@ -191,7 +180,7 @@ id="svg2"
 					<span class="family-name">Tomáš</span>&nbsp;-&nbsp;
 					<span class="category">projektant</span>
 				</h2>
-				<div>email: <a class="email" href="mailto:bh.premysltomas@seznam.cz">bh.premysltomas@seznam.cz</a></div>
+				<div><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email" href="mailto:bh.premysltomas@seznam.cz">bh.premysltomas@seznam.cz</a></div>
 			</p> <!-- vcard Přemysl Tomáš -->
 
 			<p id="hcard-Ing.-Denis-Owczarzy" class="vcard">
@@ -201,7 +190,7 @@ id="svg2"
 					<span class="family-name">Owczarzy</span>&nbsp;-&nbsp;
 					<span class="category">projektant</span>
 				</h2>
-				<div>email: <a class="email" href="mailto:bh.denisowc@gmail.com">bh.denisowc@gmail.com</a></div>
+				<div><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email" href="mailto:bh.denisowc@gmail.com">bh.denisowc@gmail.com</a></div>
 			</p> <!-- vcard Denis Owczarzy -->
 
 		</div> <!-- left -->
@@ -214,17 +203,17 @@ id="svg2"
 					<span class="family-name">Šikula</span>&nbsp;-&nbsp;
 					<span class="category">projektant</span>
 				</h2>
-				<div>email: <a class="email" href="mailto:bh.sikula@gmail.com">bh.sikula@gmail.com</a></div>
+				<div><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email" href="mailto:bh.sikula@gmail.com">bh.sikula@gmail.com</a></div>
 			</p> <!-- vcard Martin Šikula -->
 
-      <p id="hcard-Ing.-Robert-Tomov" class="vcard">
+      <p id="hcard-Ing.-Róbert-Tomov" class="vcard">
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing.</span>
-					<span class="given-name">Robert</span>
+					<span class="given-name">Róbert</span>
 					<span class="family-name">Tomov</span>&nbsp;-&nbsp;
 					<span class="category">projektant</span>
 				</h2>
-				<div>email: <a class="email" href="mailto:bh.tomov@gmail.com">bh.tomov@gmail.com</a></div>
+				<div><i class="fa fa-envelope-o" aria-hidden="true"></i><a class="email" href="mailto:bh.tomov@gmail.com">bh.tomov@gmail.com</a></div>
 			</p> <!-- vcard Robert Tomov -->
 
 			<p><h2>Naši partneři, odkazy</h2>
@@ -238,11 +227,10 @@ id="svg2"
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.806489637316!2d16.59589041568733!3d49.223196879324966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712940c0d1b2505%3A0x5268b4b3798d53c6!2sRostislavovo+n%C3%A1m.+2347%2F5A%2C+612+00+Brno-Brno-Kr%C3%A1lovo+Pole!5e0!3m2!1scs!2scz!4v1456899414137" width="648" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
-        <div class="main-col2">
-          <div class="center">
-          <p class="vertical-text"><span id="height"></span></p></div>
-        </div>
       </main>
+      <div class="getMainHeight">
+          <span id="height"></span>
+      </div>
 
 
   <script type="text/javascript" src="/js/res.js"></script>

@@ -5,22 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projekce | B.H. Engineering s.r.o.</title>
-  <script>
-      var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = '/css/main.min.css';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(cb);
-      else window.addEventListener('load', cb);
-</script>
   <link rel="stylesheet" href="/css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-  <link href='/fonts/akhand_semibold-webfont.woff' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="http://bhing.cz/projekce">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://bhing.cz/feed.xml">
+  <script src="https://use.fontawesome.com/3dd73b1584.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -30,7 +19,7 @@
 
     <header>
   <div class="container">
-    <a href="index"><svg
+    <a href="/"><svg
 viewBox="-40 5 277.8594 28.48058"
 width="193.01462"
 height="60"
@@ -150,7 +139,7 @@ id="svg2"
 </svg>
 </a>
     <nav>
-      <a id="home-nav" href="index">o nás</a>
+      <a id="home-nav" href="/">o nás</a>
       <a id="projekce-nav" href="projekce">projekce</a>
       <a id="dozor-nav" href="dozor">stavební dozor</a>
       <a id="reference-nav" href="reference">reference</a>
@@ -179,11 +168,10 @@ id="svg2"
 		</ul>
 
         </div>
-        <div class="main-col2">
-          <div class="center">
-          <p class="vertical-text"><span id="height"></span></p></div>
-        </div>
       </main>
+      <div class="getMainHeight">
+          <span id="height"></span>
+      </div>
 
 
   <script type="text/javascript" src="/js/res.js"></script>

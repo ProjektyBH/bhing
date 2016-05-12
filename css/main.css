@@ -51,12 +51,17 @@ body {
 /*** Header + Logo ***/
 header {
 	height:64px;
+  overflow:hidden;
 	width:100%;
-	background: #1a1a1a;
-	position: fixed;
-	top: 0;
-  opacity: 0.99;
-  z-index: 1;
+	background:#1a1a1a;
+	position:fixed;
+	top:0;
+  z-index:1;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
 }
 
 .container {
@@ -152,8 +157,6 @@ body#kontakt main::before {
   transform: rotate(-90deg);
 }
 
-i {padding-right:5px; color: #444;font-size:6px;}
-
 .col {
 	float: left;
 	width: 344px;
@@ -171,7 +174,6 @@ i {padding-right:5px; color: #444;font-size:6px;}
 .ref-image img {display: block; margin:auto; vertical-align: center;}
 
 iframe {margin:15px 30px 15px 30px;}
-
 /*** Links ***/
 a {
 	color:#a25b56;
@@ -191,7 +193,7 @@ h1 {
 	font-size:2.75em;
 	color:#333;
 	margin-top: 0.1875em;
-	margin-bottom: -0.3125em;
+	margin-bottom: -0.15em;
 }
 h2 {
 	font-size:1em;
@@ -199,7 +201,8 @@ h2 {
 }
 
 ul {
-	padding: 0 0 0 20px;
+  padding-left: 20px;
+  margin: 0;
 }
 
 /*** Reference ***/
@@ -209,7 +212,6 @@ label {
 	float:left;
 	width:130px;
 	height:20px;
-	text-align:center;
   background: #a25b56;
 	color:#fff;
 	font-size: 0.75em;
@@ -218,10 +220,15 @@ label {
 	border-radius: 0;
 	margin: 22px 20px 28px 0;
 	cursor:pointer;
+  text-align: center;
 }
 label:hover {
   border: 2px solid #a25b56;
   color:#444;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
   background: none;
 }
 
@@ -248,6 +255,8 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
 	overflow:auto;
   transition: opacity .5s ease-in-out;
 }
+
+/*** Selection ***/
 ::selection {
   background: #a25b56;
   color: #fff;

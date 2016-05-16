@@ -18,34 +18,8 @@ body {
   margin:0;
 	padding:0;
   background:
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(0% + 128px) no-repeat,
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 30px) no-repeat,
-
-  repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% - 385px) calc(0% + 105px) no-repeat,
-	repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 383px) calc(0% + 105px) no-repeat,
-
-  repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(0% + 107px) no-repeat,
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 1px) 50% 112px no-repeat,
-
-  repeating-linear-gradient(90deg, #eee, #eee 1px, #eee 1px) calc(50% + 400px) 0 no-repeat,
-  repeating-linear-gradient(90deg, #eee, #eee 1px, transparent 1px) calc(50% + 400px) 100% no-repeat,
-  repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 400px) calc(0% + 120px) repeat-y,
-
-	repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% - 376px) 107px no-repeat,
-
-  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 393px) calc(0% + 124px) no-repeat,
-  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 26px) no-repeat,
   url("/img/layout/bgd.png") calc(50% - 48px) 32px fixed;
-  background-size:
-  16px 1px, 16px 1px,
-
-  2px 16px, 1px 16px,
-
-  29px 10px, 781px 1px,
-
-  1px 122px, 1px 23px, 1px 1px,
-
-  29px 10px, 29px 10px, 29px 10px, auto;
+  background-size:auto;
 
   background-color: #f8f8f8;
 	font: 100% "Source Sans Pro", sans-serif;
@@ -56,8 +30,8 @@ body {
 header {
 	height:96px;
   width:100%;
-  background:#1a1a1a;
   overflow:hidden;
+  background:#1a1a1a;
 	position:fixed;
 	top:0;
   left: 0;
@@ -69,6 +43,14 @@ header {
   transition: all 0.3s;
 }
 
+header.smaller .brand {
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 header img {
   position:absolute;
   height: 62px;
@@ -92,7 +74,7 @@ header.smaller {
 }
 
 .container {
-	width:920px;
+	width:1153px;
 	margin:auto;
 }
 
@@ -107,14 +89,14 @@ body#kontakt a#kontakt-nav {
 nav {
 	float:right;
 }
-nav a {
+header nav a {
 	display: inline-block;
 	font-size:0.75em;
 	text-transform:uppercase;
 	color:#5e5e5e;
   padding-top: 2px;
 	line-height: 96px;
-  margin: auto 15px auto 15px;
+  margin-left: 15px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -122,66 +104,56 @@ nav a {
   transition: all 0.3s;
 }
 header.smaller nav a {
-  line-height:64px;padding-top: 2px;margin: 0 0 0 15px;
+  line-height:64px;padding-top: 2px;margin-left: 15px;
 }
 nav a:hover {
   color:#fff;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  transition:all .3s;
 }
 
 header .title {
-  margin-left: 75px;
+  margin-left: 65px;
   font-family: Akhand Light, sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 1.5em;
-  line-height:96px;
+
   color: #fff;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 header.smaller .title {
-  line-height: 64px;
-  margin-left: 60px;
+
 }
 
 /*** Content ***/
 aside {
   height: 16px;
-  padding-top: 1px;
+  padding-top: 0px;
 	width:100%;
 	position: absolute;
 	font-size: 0.875em;
 	font-weight: bold;
   color:#444;
 	text-align:center;
-  top: 93px;
+  top: 95px;
   z-index: -1;
 }
 
 main {
   border: 1px dotted #ccc;
 	margin: 128px auto 30px auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  width:769px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width:1153px;
 	box-sizing:border-box;
-	padding:8px 30px 10px 30px;
+	padding:8px 60px 10px 60px;
 	overflow:auto;
 	font-size: 1em;
 }
 
 main::before {
   margin: 128px auto 30px auto;
-  width:769px;
+  width:1153px;
   box-sizing:border-box;
   content: "";
-  opacity: 0.5;
+  opacity: 0.6;
   top: 0;
   right: 0;
   bottom: 0;
@@ -198,9 +170,11 @@ body#dozor main::before {
 body#projekce main::before {
   background: url("/img/projekce.png") 100% 20px no-repeat;
 }
+body#reference main::before {
+  background: url("/img/reference.png") 100% 20px no-repeat;
+}
 body#kontakt main::before {
   background: url("/img/kontakt.png") 100% 50px no-repeat;
-  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .getMainHeight {
@@ -230,7 +204,8 @@ body#kontakt main::before {
 }
 .ref-image img {display: block; margin:auto; vertical-align: center;}
 
-iframe {margin:15px 30px 15px 30px;}
+
+iframe {margin:20px 0 0 10px;width: 540px; height:400px;}
 /*** Links ***/
 a {
 	color:#a25b56;
@@ -245,7 +220,7 @@ a:hover,a:active,a:link {
 h1 {
 	text-shadow: .5px .5px #888;
 	text-transform:uppercase;
-  font-family: Akhand Semibold, sans-serif;
+	font-family: Akhand Semibold, sans-serif;
 	font-weight: normal;
 	font-size:2.75em;
 	color:#333;

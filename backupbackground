@@ -1,0 +1,29 @@
+background:
+repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(0% + 128px) no-repeat,
+repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 30px) no-repeat,
+
+repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% - 385px) calc(0% + 104px) no-repeat,
+repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 383px) calc(0% + 104px) no-repeat,
+
+repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(0% + 108px) no-repeat,
+repeating-linear-gradient(0deg, #444, transparent 1px, transparent 1px) 50% 112px no-repeat,
+
+repeating-linear-gradient(90deg, #eee, #eee 1px, #eee 1px) calc(50% + 400px) 0 no-repeat,
+repeating-linear-gradient(90deg, #eee, #eee 1px, transparent 1px) calc(50% + 400px) 100% no-repeat,
+repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 400px) calc(0% + 118px) repeat-y,
+
+repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% - 376px) 108px no-repeat,
+
+repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 393px) calc(0% + 124px) no-repeat,
+repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 26px) no-repeat,
+url("/img/layout/bgd.png") calc(50% - 48px) 0px fixed;
+background-size:
+16px 1px, 16px 1px,
+
+2px 16px, 1px 16px,
+
+29px 10px, 781px 1px,
+
+1px 120px, 1px 23px, 1px 1px,
+
+29px 10px, 29px 10px, 29px 10px, auto;

@@ -5,35 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projekce | B.H. Engineering s.r.o.</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/icons/css/fontello.css">
+  <link rel="stylesheet" href="/icons/css/home.css">
   <link rel="canonical" href="http://bhing.cz/projekce">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://bhing.cz/feed.xml">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="js/classie.js"></script>
-  <script src="http://ruseller.com/lessons/les1882/demo/js/modernizr.custom.js"></script>
-		<script src="http://ruseller.com/lessons/les1882/demo/js/cbpAnimatedHeader.min.js"></script>
-  <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 150,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
-      var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector("header"),e=false,a=300;function f(){window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"header.smaller")}else{classie.remove(g,"header.smaller")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();
-  </script>
 </head>
 
   <body id="projekce">
@@ -42,41 +22,52 @@
   <div class="container">
     <a href="/"><img src="img/logo.svg"/><span class="title">B.H.engineering</span></a>
     <nav>
-      <a id="home-nav" href="/"><span style="color: #444">.</span>o nás</a>
-      <a id="projekce-nav" href="projekce"><span style="color: #444">.</span>projekce</a>
-      <a id="dozor-nav" href="dozor"><span style="color: #444">.</span>stavební dozor</a>
-      <a id="reference-nav" href="reference"><span style="color: #444">.</span>reference</a>
-      <a id="kontakt-nav" href="kontakt"><span style="color: #444">.</span>kontakt</a>
+      <a id="home-nav" title="O nás" href="/">o nás</a>
+      <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+      <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+      <a id="reference-nav" title="Reference" href="reference">reference</a>
+      <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
     </nav>
-  </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">&#xe800</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a id="home-nav" title="O nás" href="/">o nás</a>
+        <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+        <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+        <a id="reference-nav" title="Reference" href="reference">reference</a>
+        <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
+      </div>
+    </div>
 </header>
 
 
           <aside>768px</aside>
-      <main id="getHeight">
-        <div class="main-col1">
-          <h1>Projekce</h1>
-          		<p>Našim klientům nabízíme zpracování projektů pozemních staveb a technických zařízení budov. Projektujeme drobné stavební úpravy bytů i velké bytové a zemědělské stavby.</p>
+      <div class="main-container">
+        <main id="getHeight">
+          <div class="main-col1">
+            <h1>Projekce</h1>
+            		<p>Našim klientům nabízíme zpracování projektů pozemních staveb a technických zařízení budov. Projektujeme drobné stavební úpravy bytů i velké bytové a zemědělské stavby.</p>
 
-		<p>Pro naše klienty zajišťujeme projekční činnost ve všech fázích přípravy a realizace stavby:</p>
+		<p><strong>Pro naše klienty zajišťujeme projekční činnost ve všech fázích přípravy a realizace stavby:</strong></p>
 		<ul>
-			<li>Základní studie: V této fázi poskytujeme odborné poradenství ke stavebnímu záměru, zajistíme územně plánovací podklady a stanovíme základní technickou a ekonomickou koncepci stavby</li>
-			<li>Architektonická studie slouží zejména pro stanovení hmotové podoby stavby, vyřešení estetických a provozních funkcí.</li>
-			<li>Projekt pro územní řízení: Tento projekt je prvním stupněm dokumentace a není zákonem vyžadován pro všechny stavby. V projektu pro územní řízení je již určena základní podoba stavby a její umístění, řeší se napojení na dopravní a technickou infrastrukturu a další vazby na okolí.</li>
-			<li>Projekt pro stavební povolení nebo ohlášení stavby je pro většinu staveb předepsán zákonem a prováděcí vyhláškou je stanoven i jeho rozsah, obsah a účel. Projekt již zcela jasně definuje stavbu, konkrétním způsobem řeší napojení na infrastrukturu a stanovuje i základní podmínky výstavby. Součástí je požárně bezpečnostní řešení, statický výpočet, energetické posouzení stavby, koncepční návrh elektroinstalace, vodovodu, kanalizace, vytápění a plynovodu a samozřejmě stavební dokumentace.</li>
-			<li>Projekt pro provádění stavby slouží k vlastní realizaci. Většinou je předepsán projektem pro stavební povolení a přímo na něj navazuje. Jeho rozsah a obsah se stanovuje individuálně na základě požadavků objednatele, často ve spolupráci a podle požadavků dodavatele stavby.</li>
-			<li>Projekt skutečného provedení stavby, dokumentace stávajícího stavu a další drobné projekční práce jsou také předmětem naší činnosti a rádi je pro Vás zajistíme.</li>
-			<li>Průzkumy, vytýčení a zaměření staveniště Vám zajistíme u našich partnerů a Vy se nemusíte (pokud nechcete) starat vůbec o nic.</li>
-			<li><a href="dozor">Autorský dozor, stavební dozor nebo technický dozor stavebníka</a> jsou činnosti, kterými navazujeme na práci projektantů.</li>
+			<li><span class="circle">1</span><h3>Základní studie</h3>: V této fázi poskytujeme odborné poradenství ke stavebnímu záměru, zajistíme územně plánovací podklady a stanovíme základní technickou a ekonomickou koncepci stavby</li>
+			<li><span class="circle">2</span><h3>Architektonická studie</h3>: Slouží zejména pro stanovení hmotové podoby stavby, vyřešení estetických a provozních funkcí.</li>
+			<li><span class="circle">3</span><h3>Projekt pro územní řízení</h3>: Tento projekt je prvním stupněm dokumentace a není zákonem vyžadován pro všechny stavby. V projektu pro územní řízení je již určena základní podoba stavby a její umístění, řeší se napojení na dopravní a technickou infrastrukturu a další vazby na okolí.</li>
+			<li><span class="circle">4</span><h3>Projekt pro stavební povolení nebo ohlášení stavby</h3>: Pro většinu staveb je předepsán zákonem a prováděcí vyhláškou je stanoven i jeho rozsah, obsah a účel. Projekt již zcela jasně definuje stavbu, konkrétním způsobem řeší napojení na infrastrukturu a stanovuje i základní podmínky výstavby. Součástí je požárně bezpečnostní řešení, statický výpočet, energetické posouzení stavby, koncepční návrh elektroinstalace, vodovodu, kanalizace, vytápění a plynovodu a samozřejmě stavební dokumentace.</li>
+			<li><span class="circle">5</span><h3>Projekt pro provádění stavby</h3>: Slouží k vlastní realizaci. Většinou je předepsán projektem pro stavební povolení a přímo na něj navazuje. Jeho rozsah a obsah se stanovuje individuálně na základě požadavků objednatele, často ve spolupráci a podle požadavků dodavatele stavby.</li>
+			<li><span class="circle">6</span><h3>Projekt skutečného provedení stavby</h3>, dokumentace stávajícího stavu a další drobné projekční práce: Jsou také předmětem naší činnosti a rádi je pro Vás zajistíme.</li>
+			<li><span class="circle">7</span><h3>Průzkumy, vytyčení a zaměření staveniště</h3> Zajistíme vám u našich partnerů a Vy se nemusíte (pokud nechcete) starat vůbec o nic.</li>
+			<li><span class="circle">8</span><h3><a href="dozor">Autorský dozor, stavební dozor nebo technický dozor stavebníka</a></h3>: Činnosti, kterými navazujeme na práci projektantů.</li>
 		</ul>
 
-        </div>
-      </main>
+          </div>
+        </main>
+      </div>
       <div class="getMainHeight">
           <span id="height"></span>
       </div>
 
-</div>
   <script type="text/javascript" src="/js/res.js"></script>
+  <script src="js/classie.js"></script>
   </body>
 </html>

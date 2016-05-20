@@ -5,35 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O nás | B.H. Engineering s.r.o.</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/icons/css/fontello.css">
+  <link rel="stylesheet" href="/icons/css/home.css">
   <link rel="canonical" href="http://bhing.cz/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://bhing.cz/feed.xml">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="js/classie.js"></script>
-  <script src="http://ruseller.com/lessons/les1882/demo/js/modernizr.custom.js"></script>
-		<script src="http://ruseller.com/lessons/les1882/demo/js/cbpAnimatedHeader.min.js"></script>
-  <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 150,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
-      var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector("header"),e=false,a=300;function f(){window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"header.smaller")}else{classie.remove(g,"header.smaller")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();
-  </script>
 </head>
 
   <body id="home">
@@ -42,21 +22,31 @@
   <div class="container">
     <a href="/"><img src="img/logo.svg"/><span class="title">B.H.engineering</span></a>
     <nav>
-      <a id="home-nav" href="/"><span style="color: #444">.</span>o nás</a>
-      <a id="projekce-nav" href="projekce"><span style="color: #444">.</span>projekce</a>
-      <a id="dozor-nav" href="dozor"><span style="color: #444">.</span>stavební dozor</a>
-      <a id="reference-nav" href="reference"><span style="color: #444">.</span>reference</a>
-      <a id="kontakt-nav" href="kontakt"><span style="color: #444">.</span>kontakt</a>
+      <a id="home-nav" title="O nás" href="/">o nás</a>
+      <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+      <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+      <a id="reference-nav" title="Reference" href="reference">reference</a>
+      <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
     </nav>
-  </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">&#xe800</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a id="home-nav" title="O nás" href="/">o nás</a>
+        <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+        <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+        <a id="reference-nav" title="Reference" href="reference">reference</a>
+        <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
+      </div>
+    </div>
 </header>
 
 
           <aside>768px</aside>
-      <main id="getHeight">
-        <div class="main-col1">
-          <h1>O nás</h1>
-            <p><strong>Motto (filozofie firmy): <q>Každá stavba a každý stavebník si zaslouží odborný a zodpovědný přístup od&nbsp;první studie až po realizaci.</q></strong></p>
+      <div class="main-container">
+        <main id="getHeight">
+          <div class="main-col1">
+            <h1>O nás</h1>
+              <p><strong>Motto (filozofie firmy): <q>Každá stavba a každý stavebník si zaslouží odborný a zodpovědný přístup od&nbsp;první studie až po realizaci.</q></strong></p>
 
   <p>Firma B.H.engineering, s.r.o. se specializuje na poskytování projekčních a inženýrských služeb stavebníkům. Za&nbsp;dobu naší působnosti na trhu jsme získali bohaté zkušenosti v oblasti projektování staveb, jejich povolování, výběru dodavatele, provádění stavebního a autorského dozoru a uvádění staveb do provozu. Velmi důležitou součástí naší činnosti je poradenství a konzultace ve všech oblastech stavebnictví, včetně energetické optimalizace staveb, volby vhodných technických zařízení pro vytápění a větrání, použití tradičních i přírodních stavebních materiálů a využívání dotačních programů. V posledních letech se v návaznosti na měnící se legislativu stále aktivněji věnujeme navrhování energeticky úsporných staveb-nulových domů, pasivních domů a&nbsp;nízkoenergetických domů.</p>
 
@@ -69,25 +59,26 @@
 
   <p>Menší objem zakázek tohoto typu je dán nezastupitelností autorizovaných inženýrů při řízení nebo dozorování staveb.</p>
 
-  <p><h2>Ing. Jiří Svoboda</h2> vystudoval stavební fakultu VUT v Brně, obor Building constructions (pozemní stavby) se&nbsp;zaměřením na technická zařízení budov. Je jednatelem společnosti a zabývá se zejména projektováním pozemních staveb, technických zařízení staveb a stavebním dozorem. Další náplň jeho činnosti tvoří výuka na&nbsp;Fakultě architektury, kde učí pozemní stavitelství a technická zařízení budov. Je členem České komory autorizovaných inženýrů a techniků činných ve výstavbě se specializací pozemní stavby.</p>
+  <p><h3>Ing. Jiří Svoboda</h3> vystudoval stavební fakultu VUT v Brně, obor Building constructions (pozemní stavby) se&nbsp;zaměřením na technická zařízení budov. Je jednatelem společnosti a zabývá se zejména projektováním pozemních staveb, technických zařízení staveb a stavebním dozorem. Další náplň jeho činnosti tvoří výuka na&nbsp;Fakultě architektury, kde učí pozemní stavitelství a technická zařízení budov. Je členem České komory autorizovaných inženýrů a techniků činných ve výstavbě se specializací pozemní stavby.</p>
 
-  <p><h2>Ing. Přemysl Tomáš</h2> pracuje ve firmě jako technik a projektant pozemních staveb. Odborné vzdělání získal na&nbsp;střední průmyslové škole stavební a při zaměstnání pokračuje v doktorském studiu na Stavební fakultě Vysokého učení technického v Brně. Projektuje pozemní stavby, specializuje se na technické zařízení budov.</p>
+  <p><h3>Ing. Přemysl Tomáš</h3> pracuje ve firmě jako technik a projektant pozemních staveb. Odborné vzdělání získal na&nbsp;střední průmyslové škole stavební a při zaměstnání pokračuje v doktorském studiu na Stavební fakultě Vysokého učení technického v Brně. Projektuje pozemní stavby, specializuje se na technické zařízení budov.</p>
 
-  <p><h2>Ing. arch. Martin Šikula</h2> pracuje ve firmě jako architekt a projektant pozemních staveb. Odborné vzdělání získal na střední průmyslové škole stavební a bakalářské a magisterské studium absolvoval na Fakultě architektury VUT v Brně. Projektuje pozemní stavby, specializuje se na architektonickou a stavebně konstrukční části projektu.</p>
+  <p><h3>Ing. arch. Martin Šikula</h3> pracuje ve firmě jako architekt a projektant pozemních staveb. Odborné vzdělání získal na střední průmyslové škole stavební a bakalářské a magisterské studium absolvoval na Fakultě architektury VUT v Brně. Projektuje pozemní stavby, specializuje se na architektonickou a stavebně konstrukční části projektu.</p>
 
-  <p><h2>Ing. Denis Owczarzy</h2> pracuje ve firmě jako projektant pozemních staveb. Inženýrský titul získal na Stavební fakultě VUT v Brně. Projektuje pozemní stavby.</p>
+  <p><h3>Ing. Denis Owczarzy</h3> pracuje ve firmě jako projektant pozemních staveb. Inženýrský titul získal na Stavební fakultě VUT v Brně. Projektuje pozemní stavby.</p>
 
-  <p><h2>Ing. Róbert Tomov</h2> pracuje ve firmě jako projektant pozemních staveb. Inženýrský titul získal na Stavební fakultě VUT v Brně. Projektuje pozemní stavby.</p>
+  <p><h3>Ing. Róbert Tomov</h3> pracuje ve firmě jako projektant pozemních staveb. Inženýrský titul získal na Stavební fakultě VUT v Brně. Projektuje pozemní stavby.</p>
 
-  <p><h2>Externí spolupracovníci</h2> jsou nezbytnými partnery, kteří nám umožňují nabízet zákazníkům kompletní servis ve&nbsp;všech oborech stavebnictví. <a href="http://www.petrsuchanek.cz/" title="www.petrsuchanek.cz">Ing. Petr Suchánek, Ph.D.</a> je vynikajícím odborníkem na stavební fyziku, kterou vyučuje na Fakultě architektury v Brně. Ing. Jan Blažík je specialistou na statiku ocelových konstrukcí a realizovali jsme s ním několik velkých a zajímavých zakázek. Dalším partnerem v oblasti statiky je firma JP Statika, s.r.o., se&nbsp;kterou řešíme stavby rodinných i bytových domů. V oblasti BOZP a požární ochrany spolupracujeme s Ing. Tomášem Hlavačkou.</p>
+  <p><h3>Externí spolupracovníci</h3> jsou nezbytnými partnery, kteří nám umožňují nabízet zákazníkům kompletní servis ve&nbsp;všech oborech stavebnictví. <a href="http://www.petrsuchanek.cz/" title="www.petrsuchanek.cz">Ing. Petr Suchánek, Ph.D.</a> je vynikajícím odborníkem na stavební fyziku, kterou vyučuje na Fakultě architektury v Brně. Ing. Jan Blažík je specialistou na statiku ocelových konstrukcí a realizovali jsme s ním několik velkých a zajímavých zakázek. Dalším partnerem v oblasti statiky je firma JP Statika, s.r.o., se&nbsp;kterou řešíme stavby rodinných i bytových domů. V oblasti BOZP a požární ochrany spolupracujeme s Ing. Tomášem Hlavačkou.</p>
 
-        </div>
-      </main>
+          </div>
+        </main>
+      </div>
       <div class="getMainHeight">
           <span id="height"></span>
       </div>
 
-</div>
   <script type="text/javascript" src="/js/res.js"></script>
+  <script src="js/classie.js"></script>
   </body>
 </html>

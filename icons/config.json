@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "home",
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
@@ -7,22 +7,28 @@
   "ascent": 850,
   "glyphs": [
     {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
       "uid": "5854855e963044f93b15738a5bb27a29",
-      "css": "phone-1",
-      "code": 59397,
+      "css": "phone",
+      "code": 59395,
       "src": "entypo"
     },
     {
       "uid": "ae3so8q0b0n2h8esv9flua2nmwswa8fd",
-      "css": "mail-5",
-      "code": 59401,
+      "css": "mail",
+      "code": 59394,
       "src": "modernpics"
-    },
-    {
-      "uid": "513ac180ff85bd275f2b736720cbbf5e",
-      "css": "home-3",
-      "code": 59410,
-      "src": "entypo"
     }
   ]
 }

@@ -27,3 +27,5 @@ background-size:
 1px 120px, 1px 23px, 1px 1px,
 
 29px 10px, 29px 10px, 29px 10px, auto;
+
+<img src="img/logo.svg"/><span class="title">B.H.engineering</span>

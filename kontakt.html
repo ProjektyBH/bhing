@@ -5,35 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kontakt | B.H. Engineering s.r.o.</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/icons/css/fontello.css">
+  <link rel="stylesheet" href="/icons/css/home.css">
   <link rel="canonical" href="http://bhing.cz/kontakt">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://bhing.cz/feed.xml">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script src="js/classie.js"></script>
-  <script src="http://ruseller.com/lessons/les1882/demo/js/modernizr.custom.js"></script>
-		<script src="http://ruseller.com/lessons/les1882/demo/js/cbpAnimatedHeader.min.js"></script>
-  <script>
-      function init() {
-          window.addEventListener('scroll', function(e){
-              var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                  shrinkOn = 150,
-                  header = document.querySelector("header");
-              if (distanceY > shrinkOn) {
-                  classie.add(header,"smaller");
-              } else {
-                  if (classie.has(header,"smaller")) {
-                      classie.remove(header,"smaller");
-                  }
-              }
-          });
-      }
-      window.onload = init();
-      var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector("header"),e=false,a=300;function f(){window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"header.smaller")}else{classie.remove(g,"header.smaller")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();
-  </script>
 </head>
 
   <body id="kontakt">
@@ -42,21 +22,31 @@
   <div class="container">
     <a href="/"><img src="img/logo.svg"/><span class="title">B.H.engineering</span></a>
     <nav>
-      <a id="home-nav" href="/"><span style="color: #444">.</span>o nás</a>
-      <a id="projekce-nav" href="projekce"><span style="color: #444">.</span>projekce</a>
-      <a id="dozor-nav" href="dozor"><span style="color: #444">.</span>stavební dozor</a>
-      <a id="reference-nav" href="reference"><span style="color: #444">.</span>reference</a>
-      <a id="kontakt-nav" href="kontakt"><span style="color: #444">.</span>kontakt</a>
+      <a id="home-nav" title="O nás" href="/">o nás</a>
+      <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+      <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+      <a id="reference-nav" title="Reference" href="reference">reference</a>
+      <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
     </nav>
-  </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">&#xe800</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a id="home-nav" title="O nás" href="/">o nás</a>
+        <a id="projekce-nav" title="Projekce" href="projekce">projekce</a>
+        <a id="dozor-nav" title="Stavební dozor" href="dozor">stavební dozor</a>
+        <a id="reference-nav" title="Reference" href="reference">reference</a>
+        <a id="kontakt-nav" title="Kontakt" href="kontakt">kontakt</a>
+      </div>
+    </div>
 </header>
 
 
           <aside>768px</aside>
-      <main id="getHeight">
-        <div class="main-col1">
-          <h1>Kontakt</h1>
-          		<p class="hcard-B.H.engineering vcard">
+      <div class="main-container">
+        <main id="getHeight">
+          <div class="main-col1">
+            <h1>Kontakt</h1>
+            		<p class="hcard-B.H.engineering vcard">
  			<h2 class="fn org">B.H.engineering, s.r.o.</h2><br>
 			Sídlo: Horní 206/12, Jihlava, 586 01<br>
 			IČ: 269 77 125, DIČ: CZ 269 77 125<br>
@@ -69,31 +59,31 @@
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing.</span>
 					<span class="given-name">Jiří</span>
-					<span class="family-name">Svoboda</span>&nbsp;-&nbsp;
-					<span class="category">jednatel</span>
+					<span class="family-name">Svoboda</span>
 				</h2>
-				<div><span class="icon-phone-1" aria-hidden="true"></span><span class="tel"> +420 775 990 103</span></div>
-				<div class="icon-mail-5" aria-hidden="true"><a class="email" href="mailto:bh.svoboda@seznam.cz">bh.svoboda@seznam.cz</a></div>
+				<span class="category">-&nbsp;jednatel</span>
+				<div><span class="icon-phone" aria-hidden="true"></span><span class="tel"> +420 775 990 103</span></div>
+				<div class="icon-mail" aria-hidden="true"><a class="email" href="mailto:bh.svoboda@seznam.cz">bh.svoboda@seznam.cz</a></div>
 			</p> <!-- vcard Jiří Svoboda -->
 
 			<p id="hcard-Ing.-Přemysl-Tomáš" class="vcard">
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing.</span>
 					<span class="given-name">Přemysl</span>
-					<span class="family-name">Tomáš</span>&nbsp;-&nbsp;
-					<span class="category">projektant</span>
+					<span class="family-name">Tomáš</span>
 				</h2>
-				<div class="icon-mail-5" aria-hidden="true"><a class="email" href="mailto:bh.premysltomas@seznam.cz">bh.premysltomas@seznam.cz</a></div>
+				<span class="category">-&nbsp;projektant</span>
+				<div class="icon-mail" aria-hidden="true"><a class="email" href="mailto:bh.premysltomas@seznam.cz">bh.premysltomas@seznam.cz</a></div>
 			</p> <!-- vcard Přemysl Tomáš -->
 
 			<p id="hcard-Ing.-Denis-Owczarzy" class="vcard">
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing.</span>
 					<span class="given-name">Denis</span>
-					<span class="family-name">Owczarzy</span>&nbsp;-&nbsp;
-					<span class="category">projektant</span>
+					<span class="family-name">Owczarzy</span>
 				</h2>
-				<div class="icon-mail-5" aria-hidden="true"><a class="email" href="mailto:bh.denisowc@gmail.com">bh.denisowc@gmail.com</a></div>
+				<span class="category">-&nbsp;projektant</span>
+				<div class="icon-mail" aria-hidden="true"><a class="email" href="mailto:bh.denisowc@gmail.com">bh.denisowc@gmail.com</a></div>
 			</p> <!-- vcard Denis Owczarzy -->
 		</div>
 		<div class="col">
@@ -101,39 +91,40 @@
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing. arch.</span>
 					<span class="given-name">Martin</span>
-					<span class="family-name">Šikula</span>&nbsp;-&nbsp;
-					<span class="category">projektant</span>
+					<span class="family-name">Šikula</span>
 				</h2>
-				<div class="icon-mail-5" aria-hidden="true"><a class="email" href="mailto:bh.sikula@gmail.com">bh.sikula@gmail.com</a></div>
+				<span class="category">-&nbsp;projektant</span>
+				<div class="icon-mail" aria-hidden="true"><a class="email" href="mailto:bh.sikula@gmail.com">bh.sikula@gmail.com</a></div>
 			</p> <!-- vcard Martin Šikula -->
 
       <p id="hcard-Ing.-Róbert-Tomov" class="vcard">
 				<h2 class="fn n category">
 					<span class="honorific-prefix">Ing.</span>
 					<span class="given-name">Róbert</span>
-					<span class="family-name">Tomov</span>&nbsp;-&nbsp;
-					<span class="category">projektant</span>
+					<span class="family-name">Tomov</span>
 				</h2>
-				<div class="icon-mail-5" aria-hidden="true"><a class="email" href="mailto:bh.tomov@gmail.com">bh.tomov@gmail.com</a></div>
+				<span class="category">-&nbsp;projektant</span>
+				<div class="icon-mail" aria-hidden="true"><a class="email" href="mailto:bh.tomov@gmail.com">bh.tomov@gmail.com</a></div>
 			</p> <!-- vcard Róbert Tomov -->
 
 			<p><h2>Naši partneři</h2>
-			<div class="icon-home-3" aria-hidden="true"><a title="www.petrsuchanek.cz" href="http://www.petrsuchanek.cz">www.petrsuchanek.cz</a></div>
-			<div class="icon-home-3" aria-hidden="true"><a title="www.fa.vutbr.cz" href="http://www.fa.vutbr.cz">www.fa.vutbr.cz</a></div>
-			<div class="icon-home-3" aria-hidden="true"><a title="www.euroline.cz" href="http://www.euroline.cz">www.euroline.cz</a></div>
-			<div class="icon-home-3" aria-hidden="true"><a title="www.servisbrno.com" href="http://www.servisbrno.com">www.servisbrno.com</a></div>
-			<div class="icon-home-3" aria-hidden="true"><a title="www.sedos.cz" href="http://www.sedos.cz">www.sedos.cz</a></div>
+			<div class="icon-home" aria-hidden="true"><a title="www.petrsuchanek.cz" href="http://www.petrsuchanek.cz">www.petrsuchanek.cz</a></div>
+			<div class="icon-home" aria-hidden="true"><a title="www.fa.vutbr.cz" href="http://www.fa.vutbr.cz">www.fa.vutbr.cz</a></div>
+			<div class="icon-home" aria-hidden="true"><a title="www.euroline.cz" href="http://www.euroline.cz">www.euroline.cz</a></div>
+			<div class="icon-home" aria-hidden="true"><a title="www.servisbrno.com" href="http://www.servisbrno.com">www.servisbrno.com</a></div>
+			<div class="icon-home" aria-hidden="true"><a title="www.sedos.cz" href="http://www.sedos.cz">www.sedos.cz</a></div>
 			</p>
 		</div> <!-- right --></div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.806489637316!2d16.59589041568733!3d49.223196879324966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712940c0d1b2505%3A0x5268b4b3798d53c6!2sRostislavovo+n%C3%A1m.+2347%2F5A%2C+612+00+Brno-Brno-Kr%C3%A1lovo+Pole!5e0!3m2!1scs!2scz!4v1456899414137" width="648" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.806489637316!2d16.59589041568733!3d49.223196879324966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712940c0d1b2505%3A0x5268b4b3798d53c6!2sRostislavovo+n%C3%A1m.+2347%2F5A%2C+612+00+Brno-Brno-Kr%C3%A1lovo+Pole!5e0!3m2!1scs!2scz!4v1456899414137" width="648px" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-        </div>
-      </main>
+          </div>
+        </main>
+      </div>
       <div class="getMainHeight">
           <span id="height"></span>
       </div>
 
-</div>
   <script type="text/javascript" src="/js/res.js"></script>
+  <script src="js/classie.js"></script>
   </body>
 </html>

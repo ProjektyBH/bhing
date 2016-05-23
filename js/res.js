@@ -117,8 +117,12 @@ if ( $(window).width() > 788) {
           document.getElementById("myDropdown").classList.toggle("show");
       }
 
+<<<<<<< HEAD
       $(function(){
         $("#dropbtn").click(function(){
            $("iframe").css("z-index", "-1");
         });
       });
+=======
+      // Close the dropdown menu if the user clicks outside of it
+>>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a

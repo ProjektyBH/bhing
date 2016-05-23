@@ -11,23 +11,12 @@
 @font-face {
     font-family: 'Source Sans Pro Semibold';
     src: url('/fonts/SourceSansPro-Semibold.ttf');
-<<<<<<< HEAD
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
       font-family: 'home';
       src: url('/font/home.eot');
-=======
-}
-@font-face {
-      font-family: 'home';
-      src: url('./font/home.eot?4293769');
-      src: url('./font/home.eot?4293769#iefix') format('embedded-opentype'),
-           url('./font/home.woff?4293769') format('woff'),
-           url('./font/home.ttf?4293769') format('truetype'),
-           url('./font/home.svg?4293769#home') format('svg');
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
       font-weight: normal;
       font-style: normal;
     }
@@ -208,11 +197,8 @@ main {
   border: 1px dotted #ccc;
 	margin: 128px 10px 30px 10px;
   background-color: rgba(255, 255, 255, 0.6);
-<<<<<<< HEAD
 
   z-index:0;
-=======
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
   max-width:769px;
 	box-sizing:border-box;
 	padding:8px 30px 10px 30px;
@@ -277,12 +263,6 @@ body#kontakt main:before {
 }
 .ref-image img {display: block; margin:auto; vertical-align: center;}
 
-<<<<<<< HEAD
-=======
-iframe {
-  margin:15px 30px 15px 30px;
-}
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 /*** Links ***/
 a {
 	color:#a25b56;
@@ -309,18 +289,8 @@ h3 {
 	font-size:1em;
 	display:inline;
   font-family: "Source Sans Pro Semibold", sans-serif;
-<<<<<<< HEAD
 }
 h3 {
-=======
-  font-weight: normal;
-}
-h3 {
-  font-size:1em;
-	display:inline;
-  font-family: "Source Sans Pro Semibold", sans-serif;
-  font-weight: normal;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
   text-transform: uppercase;
 }
 
@@ -422,7 +392,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
       height:96px;
       line-height: 96px;
       text-align: center;
-<<<<<<< HEAD
     }
     .dropbtn:focus {
       outline:0;
@@ -430,13 +399,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
     .dropbtn {
       background-color: #1a1a1a;
       color: #5e5e5e;
-=======
-      border-left: 1px dotted #444;
-    }
-    .dropbtn {
-      background-color: #1a1a1a;
-      color: #fff;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
       padding: 0;
       width:96px;
       height:96px;
@@ -446,7 +408,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
       border: none;
       cursor: pointer;
     }
-<<<<<<< HEAD
     .dropdown-content {
       display: none;
       font-size: 0.875em;
@@ -467,23 +428,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
       color: #5e5e5e;
       text-transform:uppercase;
       position: absolute;
-=======
-
-    .dropdown-content {
-      font-family: "Source Sans Pro", sans-serif;
-      display: none;
-      position: fixed;
-      left:0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-
-    .dropdown-content a {
-      color: #5e5e5e;
-      text-transform:uppercase;
-      display: block;
-      text-align: center;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
     }
 
     .show {display:block;}
@@ -505,10 +449,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
 
 .category {
   font-family: "Source Sans Pro Semibold", sans-serif;
-<<<<<<< HEAD
-=======
-  font-weight: normal;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 }
 
 .cont {
@@ -521,10 +461,6 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
 }
 strong {
   font-family: "Source Sans Pro Semibold", sans-serif;
-<<<<<<< HEAD
-=======
-  font-weight: normal;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 }
 .border {
   min-height: 222px;
@@ -537,45 +473,29 @@ strong {
   display: block;
   margin: 0 auto 0 auto;;
 }
-<<<<<<< HEAD
 .hide .border {
   transition: all .5s;
 }
-=======
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 .hide:hover img,
 .hide:hover .border {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(40%);
-<<<<<<< HEAD
   transition: all .5s;
-=======
-  transition: all .3s;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 }
 .hide ul {
   list-style-type:disc;
   display: block;
   position: absolute;
   width: 270px;
-<<<<<<< HEAD
   top: 15px;
   left: 35px;
   opacity:0;
   color:#fff;
   transition: all .3s;
-=======
-  top: 150px;
-  left: 35px;
-  opacity:0;
-  color:#fff;
-  transition: all .6s;
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 }
 
 .hide:hover ul {
   opacity:1;
-<<<<<<< HEAD
 }
 .google-maps {
   display: block;
@@ -599,7 +519,4 @@ strong {
   header .title {
     font-size: 1.5em;
   }
-=======
-  top: 15px
->>>>>>> efa5f7d8d5d37d1253e49517325966f7d711005a
 }

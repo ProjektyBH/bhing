@@ -25,14 +25,14 @@ body {
   margin:0;
 	padding:0;
   background:
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(0% + 128px) no-repeat,
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 30px) no-repeat,
+  repeating-linear-gradient(0deg, #888, transparent 1px, transparent 16px) calc(50% + 400px) calc(0% + 128px) no-repeat,
+  repeating-linear-gradient(0deg, #888, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 28px) no-repeat,
 
   repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% - 385px) calc(0% + 105px) no-repeat,
 	repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 383px) calc(0% + 105px) no-repeat,
 
   repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(0% + 107px) no-repeat,
-  repeating-linear-gradient(0deg, #444, transparent 1px, transparent 1px) 50% 112px no-repeat,
+  repeating-linear-gradient(0deg, #888, transparent 1px, transparent 1px) 50% 112px no-repeat,
 
   repeating-linear-gradient(90deg, #eee, #eee 1px, #eee 1px) calc(50% + 400px) 0 no-repeat,
   repeating-linear-gradient(90deg, #eee, #eee 1px, transparent 1px) calc(50% + 400px) 100% no-repeat,
@@ -41,7 +41,7 @@ body {
 	repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% - 376px) 107px no-repeat,
 
   repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 393px) calc(0% + 124px) no-repeat,
-  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 26px) no-repeat,
+  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 24px) no-repeat,
   url("/img/layout/bgd.png") calc(50% - 48px) 32px fixed;
   background-size:
   16px 1px, 16px 1px,
@@ -50,13 +50,13 @@ body {
 
   29px 10px, 781px 1px,
 
-  1px 122px, 1px 23px, 1px 1px,
+  1px 122px, 1px 21px, 1px 1px,
 
   29px 10px, 29px 10px, 29px 10px, auto;
 
-  background-color: #f8f8f8;
+  background-color: #fcf8f6;
 	font: 100% "Source Sans Pro", sans-serif;
-	color:#444;
+	color:#544;
 	line-height:1.5;
 }
 /*** Header + Logo ***/
@@ -66,7 +66,6 @@ header {
   box-sizing: border-box;
   padding: 0 20px 0 20px;
   background:#1a1a1a;
-  overflow:hidden;
 	position:fixed;
 	top:0;
   left: 0;
@@ -98,7 +97,6 @@ header.smaller img {
 
 header.smaller {
   height: 64px;
-  opacity: 0.9;
 }
 
 .container {
@@ -195,15 +193,14 @@ aside {
 }
 main {
   border: 1px dotted #ccc;
-	margin: 128px 10px 30px 10px;
+  margin: 128px 10px 28px 10px;
   background-color: rgba(255, 255, 255, 0.6);
-
   z-index:0;
   max-width:769px;
-	box-sizing:border-box;
-	padding:8px 30px 10px 30px;
-	overflow:auto;
-	font-size: 1em;
+  box-sizing:border-box;
+  padding:8px 30px 28px 30px;
+  overflow:auto;
+  font-size: 1em;
 }
 
 main:before {
@@ -250,6 +247,7 @@ body#kontakt main:before {
 .col {
 	float: left;
 	width: 344px;
+  overflow: auto;
 }
 .ref-image {
   float:right;
@@ -280,7 +278,7 @@ h1 {
   font-family: Akhand Semibold, sans-serif;
 	font-weight: normal;
 	font-size:2.75em;
-	color:#333;
+	color:#544;
 	margin-top: 0.1875em;
 	margin-bottom: -0.15em;
 }
@@ -299,11 +297,14 @@ ul {
   margin: 0 0 10px 0;
   list-style-type: none;
 }
+ul li {
+  padding-bottom: 10px;
+}
 
 /*** Reference ***/
 label {
   display:block;
-	padding-top: 3px;
+	line-height: 20px;
 	float:left;
 	width:120px;
 	height:20px;
@@ -365,20 +366,36 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
 .color444 {
   color: #444;
 }
+header .dropdown {
+  display: none;
+}
+
 @media screen and (max-width: 788px) {
     body {
       background: url("/img/layout/bgd.png") calc(50% - 48px) 32px fixed;
-      background-color: #f8f8f8;
+      background-color: #faf3f1;
     }
     aside {
       display: none;
     }
-    header {
-      padding: 0 0 0 20px;
-    }
     main, main:before {
       margin-top: 106px;
     }
+    header.smaller img {
+      height: 62px;
+      top:50%;
+      margin-top: -31px;
+    }
+
+    header.smaller {
+      height: 96px;
+    }
+    header.smaller .title {
+      margin-left: 75px;
+      font-size: 2em;
+      line-height:96px;
+    }
+
     .getMainHeight {
       display:none;
     }
@@ -392,6 +409,7 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
       height:96px;
       line-height: 96px;
       text-align: center;
+      margin-right: -20px;
     }
     .dropbtn:focus {
       outline:0;
@@ -411,8 +429,8 @@ input[type="radio"][id="os"]:checked ~ .rd,input[type="radio"][id="os"]:checked 
     .dropdown-content {
       display: none;
       font-size: 0.875em;
-      position: fixed;
       z-index: 10;
+      position: absolute;
       left:0;
       top: 96px;
       height: 300px;
@@ -487,7 +505,7 @@ strong {
   display: block;
   position: absolute;
   width: 270px;
-  top: 15px;
+  top: 25px;
   left: 35px;
   opacity:0;
   color:#fff;
@@ -513,10 +531,4 @@ strong {
 }
 .dropbtn:focus:after iframe {
   color: #4ff;
-}
-
-@media screen and (max-width: 450px) {
-  header .title {
-    font-size: 1.5em;
-  }
 }

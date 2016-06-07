@@ -65,20 +65,6 @@ if ( $(window).width() > 788) {
   	      }
   	    ;
 
-  	  function loadImage (el, fn) {
-  	    var img = new Image()
-  	      , src = el.getAttribute('data-src');
-  	    img.onload = function() {
-  	      if (!! el.parent)
-  	        el.parent.replaceChild(img, el)
-  	      else
-  	        el.src = src;
-
-  	      fn? fn() : null;
-  	    }
-  	    img.src = src;
-  	  }
-
   	  function elementInViewport(el) {
   	    var rect = el.getBoundingClientRect()
 
@@ -117,7 +103,7 @@ if ( $(window).width() > 788) {
           document.getElementById("myDropdown").classList.toggle("show");
       }
 
-      
+
 
       ( function( window ) {
 

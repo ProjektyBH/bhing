@@ -26,7 +26,7 @@ body {
 	padding:0;
   background:
   repeating-linear-gradient(0deg, #666, transparent 1px, transparent 16px) calc(50% + 400px) calc(0% + 128px) no-repeat,
-  repeating-linear-gradient(0deg, #666, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 28px) no-repeat,
+  repeating-linear-gradient(0deg, #666, transparent 1px, transparent 16px) calc(50% + 400px) calc(100% - 40px) no-repeat,
 
   repeating-linear-gradient(90deg, #666, transparent 2px, transparent 1px) calc(50% - 385px) calc(0% + 105px) no-repeat,
 	repeating-linear-gradient(90deg, #666, transparent 2px, transparent 1px) calc(50% + 383px) calc(0% + 105px) no-repeat,
@@ -34,14 +34,14 @@ body {
   repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(0% + 107px) no-repeat,
   repeating-linear-gradient(0deg, #666, transparent 1px, transparent 1px) 50% 112px no-repeat,
 
-  repeating-linear-gradient(90deg, #eee, #eee 1px, #eee 1px) calc(50% + 400px) 0 no-repeat,
-  repeating-linear-gradient(90deg, #eee, #eee 1px, transparent 1px) calc(50% + 400px) 100% no-repeat,
-  repeating-linear-gradient(90deg, #888, transparent 2px, transparent 1px) calc(50% + 400px) calc(0% + 120px) repeat-y,
+  repeating-linear-gradient(90deg, #e4e1da, #e4e1da 1px, #e4e1da 1px) calc(50% + 400px) 0 no-repeat,
+  repeating-linear-gradient(90deg, #e4e1da, #e4e1da 1px, #e4e1da 1px) calc(50% + 400px) 100% no-repeat,
+  repeating-linear-gradient(90deg, #888, transparent 1px, transparent 1px) calc(50% + 400px) calc(0% + 120px) repeat-y,
 
 	repeating-linear-gradient(-45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% - 376px) 107px no-repeat,
 
   repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 393px) calc(0% + 124px) no-repeat,
-  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 24px) no-repeat,
+  repeating-linear-gradient(45deg, transparent, transparent 19px, #888 19px, #888 20px) calc(50% + 392px) calc(100% - 36px) no-repeat,
   url("/img/layout/bgd.png") calc(50% - 48px) 32px fixed,
   url("/img/layout/sand.jpg") fixed;
   background-size:
@@ -51,7 +51,7 @@ body {
 
   29px 10px, 781px 1px,
 
-  1px 122px, 1px 21px, 1px 1px,
+  1px 122px, 1px 32px, 1px 1px,
 
   29px 10px, 29px 10px, 29px 10px, auto, auto;
 
@@ -71,10 +71,10 @@ header {
 	top:0;
   left: 0;
   z-index:1;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -91,9 +91,9 @@ header img {
 }
 
 header.smaller img {
-  height: 48px;
+  height: 46px;
   top:50%;
-  margin-top: -24px;
+  margin-top: -23px;
 }
 
 header.smaller {
@@ -121,7 +121,6 @@ nav a {
 	font-size:0.75em;
 	text-transform:uppercase;
 	color:#5e5e5e;
-  padding-top: 2px;
 	line-height: 96px;
   margin: auto 15px auto 15px;
   -webkit-transition: all 0.3s;
@@ -131,7 +130,8 @@ nav a {
   transition: all 0.3s;
 }
 header.smaller nav a {
-  line-height:64px;padding-top: 2px;margin: 0 0 0 15px;
+  line-height:64px;
+  margin: 0 0 0 15px;
 }
 nav a:hover {
   color:#fff;
@@ -158,7 +158,7 @@ header .title {
 header.smaller .title {
   font-size: 1.5em;
   line-height: 64px;
-  margin-left: 60px;
+  margin-left: 57px;
 }
 header .top {
   opacity: 0;
@@ -194,22 +194,22 @@ aside {
 }
 main {
   border: 1px dotted #888;
-  margin: 128px 10px 28px 10px;
-  background-color: rgba(255, 255, 255, 0.35);
+  margin: 128px 10px 40px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
   z-index:0;
   max-width:769px;
   box-sizing:border-box;
-  padding:8px 30px 28px 30px;
+  padding:8px 30px 5px 30px;
   overflow:auto;
   font-size: 1em;
 }
 
 main:before {
-  margin: 128px auto 30px auto;
+  margin: 128px auto 40px auto;
   max-width:769px;
   box-sizing:border-box;
   content: "";
-  opacity: 0.5;
+  opacity: 0.3;
   top: 0;
   right: 0;
   bottom: 0;
@@ -263,10 +263,13 @@ body#kontakt main:before {
 .ref-image img {display: block; margin:auto; vertical-align: center;}
 
 /*** Links ***/
+.normal a {
+  font-weight: 400;
+}
 a {
 	color:#a25b56;
 	text-decoration:none;
-	font-weight:600;
+	font-weight: 600;
 }
 a:hover,a:active,a:link {
 	outline:0px none;
@@ -276,7 +279,7 @@ a:hover,a:active,a:link {
 h1 {
 	text-shadow: .5px .5px #888;
 	text-transform:uppercase;
-  font-family: Akhand Semibold, sans-serif;
+  font-family: "Akhand Semibold", sans-serif;
 	font-weight: normal;
 	font-size:2.75em;
 	color:#544;
@@ -288,6 +291,7 @@ h3 {
 	font-size:1em;
 	display:inline;
   font-family: "Source Sans Pro Semibold", sans-serif;
+  font-weight: normal;
 }
 h3 {
   text-transform: uppercase;
@@ -469,6 +473,7 @@ header .dropdown {
 
 .category {
   font-family: "Source Sans Pro Semibold", sans-serif;
+  font-weight: normal;
 }
 
 .cont {
@@ -481,6 +486,7 @@ header .dropdown {
 }
 strong {
   font-family: "Source Sans Pro Semibold", sans-serif;
+  font-weight: normal;
 }
 .border {
   min-height: 222px;
@@ -491,7 +497,7 @@ strong {
 }
 .center {
   display: block;
-  margin: 0 auto 0 auto;;
+  margin: 0 auto 0 auto;
 }
 .hide .border {
   transition: all .5s;
@@ -500,6 +506,7 @@ strong {
 .hide:hover .border {
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-filter: brightness(40%);
+  filter: brightness(40%);
   transition: all .5s;
 }
 .hide ul {
@@ -524,11 +531,17 @@ strong {
   overflow: hidden;
   border: 1px dotted #888;
   min-width: 300px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .google-maps iframe {
   display:block;
   position: absolute;
   width: 100% !important;
   height: 100% !important;
+}
+
+@media screen and (max-width: 386px) {
+    header .title {
+    font-size: 1.25em;
+  }
 }

@@ -4,10 +4,10 @@
     <title>B.H.Atelier | Inženýrské služby ve stavebnictví, Brno a okolí</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://bhatelier.cz/</link>
-    <atom:link href="http://bhatelier.cz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Sep 2016 20:08:47 +0200</pubDate>
-    <lastBuildDate>Mon, 12 Sep 2016 20:08:47 +0200</lastBuildDate>
+    <link>http://bhing.cz/</link>
+    <atom:link href="http://bhing.cz/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Sep 2016 20:33:53 +0200</pubDate>
+    <lastBuildDate>Mon, 12 Sep 2016 20:33:53 +0200</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
   </channel>

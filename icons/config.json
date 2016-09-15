@@ -21,14 +21,32 @@
     {
       "uid": "5854855e963044f93b15738a5bb27a29",
       "css": "phone",
-      "code": 59395,
+      "code": 59394,
       "src": "entypo"
     },
     {
       "uid": "ae3so8q0b0n2h8esv9flua2nmwswa8fd",
       "css": "mail",
-      "code": 59394,
+      "code": 59395,
       "src": "modernpics"
+    },
+    {
+      "uid": "fa10777b2d88cc64cd6e4f26ef0e5264",
+      "css": "terminal",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9d3d9d6ce1ec63eaa26281e6162853c9",
+      "css": "camera-alt",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b59cc4d390a6df564a055f43c03a6af5",
+      "css": "camera",
+      "code": 59398,
+      "src": "linecons"
     }
   ]
 }

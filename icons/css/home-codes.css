@@ -1,5 +1,8 @@
 
 .icon-menu:before { content: '\e800'; } /* '' */
 .icon-home:before { content: '\e801'; } /* '' */
-.icon-mail:before { content: '\e802'; } /* '' */
-.icon-phone:before { content: '\e803'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
+.icon-terminal:before { content: '\e804'; } /* '' */
+.icon-camera-alt:before { content: '\e805'; } /* '' */
+.icon-camera:before { content: '\e806'; } /* '' */
